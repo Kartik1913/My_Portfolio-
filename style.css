@@ -391,3 +391,6 @@ form textarea {
     color: black;
     box-shadow: 0 0 25px #b74b4b;
 }
+#resume-button {
+  scroll-margin-top: 100px; /* adjust depending on your header height */
+}
