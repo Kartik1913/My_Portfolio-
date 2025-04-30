@@ -38,23 +38,6 @@ header {
     z-index: 100;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .logo {
     font-size: 3rem;
     color: #b74b4b;
@@ -88,19 +71,6 @@ nav a.active {
     color: #b74b4b;
     border-bottom: 3px solid #b74b4b;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media(max-width:995px) {
     .hamburger {
@@ -139,21 +109,6 @@ nav a.active {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 section {
     min-height: 100vh;
     padding: 5rem 9% 5rem;
@@ -191,27 +146,6 @@ span {
     border-radius: 50%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .home-img img {
     position: relative;
     width: 32vw;
@@ -248,23 +182,6 @@ span {
     box-shadow: 0 0 25px #b74b4b;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -285,25 +202,6 @@ span {
     color: black;
     box-shadow: 0 0 25px #b74b4b;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 1000px) {
     .home {
@@ -330,11 +228,12 @@ span {
         margin-top: 4rem;
     }
 }
+
 .contact {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 5rem 9%;
+    padding: 8rem 9%;
 }
 
 .contact h2 {
@@ -347,8 +246,20 @@ span {
 }
 
 .contact form {
-    max-width: 800px;
-    margin: auto;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    box-shadow: 0 0 30px rgba(183, 75, 75, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease-in-out;
+    animation: fadeInUp 1s ease-out;
 }
 
 .input-box {
@@ -356,6 +267,7 @@ span {
     flex-wrap: wrap;
     gap: 2rem;
     margin-bottom: 2rem;
+    width: 100%;
 }
 
 .input-box input,
@@ -369,6 +281,12 @@ form textarea {
     border: 1px solid #333;
 }
 
+.input-box input:hover,
+form textarea:hover {
+    border-color: #b74b4b;
+    box-shadow: 0 0 12px rgba(183, 75, 75, 0.4);
+}
+
 form textarea {
     flex: 1 1 100%;
     resize: none;
@@ -376,6 +294,7 @@ form textarea {
 }
 
 .contact .btn {
+    margin-top: 2rem;
     background-color: black;
     color: #b74b4b;
     border: 2px solid #b74b4b;
@@ -384,6 +303,7 @@ form textarea {
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease;
+    align-self: center;
 }
 
 .contact .btn:hover {
@@ -391,6 +311,18 @@ form textarea {
     color: black;
     box-shadow: 0 0 25px #b74b4b;
 }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 #resume-button {
-  scroll-margin-top: 500px; /* adjust depending on your header height */
+    scroll-margin-top: 500px;
 }
