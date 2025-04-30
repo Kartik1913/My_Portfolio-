@@ -31,13 +31,12 @@ header {
     width: 100%;
     padding: 1rem 9%;
     background-color: black;
-    filter: drop-shadow(10px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6); /* cleaner and more effective */
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
-
 .logo {
     font-size: 3rem;
     color: #b74b4b;
@@ -120,6 +119,7 @@ section {
     align-items: center;
     gap: 8rem;
     background-color: black;
+    padding-top: 12rem;
 }
 
 .home .home-content h1 {
@@ -326,3 +326,4 @@ form textarea {
 #resume-button {
     scroll-margin-top: 500px;
 }
+
